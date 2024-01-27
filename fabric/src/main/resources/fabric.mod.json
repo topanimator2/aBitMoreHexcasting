@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "hexdummy",
+  "id": "abitmorehex",
   "version": "${version}",
   "name": "Dummy Hex Casting Addon",
   "description": "Please describe me!",
@@ -16,15 +16,15 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.hexdummy.fabric.HexDummyFabric"
+      "net.abitmorehex.fabric.abitmorehexFabric"
     ],
     "client": [
-      "net.hexdummy.fabric.HexDummyClientFabric"
+      "net.abitmorehex.fabric.abitmorehexClientFabric"
     ]
   },
   "mixins": [
-    "hexdummy-common.mixins.json",
-    "hexdummy.mixins.json"
+    "abitmorehex-common.mixins.json",
+    "abitmorehex.mixins.json"
   ],
   "depends": {
     "minecraft": ">=1.19.2",

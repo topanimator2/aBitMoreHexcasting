@@ -18,7 +18,7 @@ from [Architectury templates](https://github.com/architectury/architectury-templ
    You can leave them empty for now.
 3. In the entire project, rename occurrences of `hexdummy` to your mod's id, both in files and in directory structure.
    Preferably also change occurrences adjacent to "Dummy" in text and file names to something related to your
-   project, and change the base package path to something other than `net.hexdummy`, e.g.
+   project, and change the base package path to something other than `net.abitmorehex`, e.g.
    to `io.github.yourname.yourmod`.
 3. Check out the [Architectury wiki](https://docs.architectury.dev/start) if you haven't yet. If you can't find
    something there, try searching on their Discord.

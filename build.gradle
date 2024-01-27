@@ -149,7 +149,7 @@ ext.getLatestChangelog = {
     return changelog.trim()
 }
 
-ext.bookPath = "data/hexdummy/patchouli_books/hexdummybook"
+ext.bookPath = "data/abitmorehex/patchouli_books/hexdummybook"
 
 tasks.register("viewLatestChangelog") {
     group "documentation"
@@ -159,13 +159,13 @@ tasks.register("viewLatestChangelog") {
     }
 }
 
-tasks.register("generateOnlineNotebookPage") {
-    group "documentation"
-    description "Pulls the addon's Hex Notebook documentation from the project and generates a page in Hex Casting's online documentation style, at doc/out.html."
-
-    exec {
-        workingDir "${rootDir}"
-        executable 'python'
-        args "doc/collate_data.py", "common/src/main/resources", "doc/HexCastingResources", "hexdummy", "hexdummybook", "doc/template.html", "doc/out.html"
-    }
-}
+// tasks.register("generateOnlineNotebookPage") {
+//    group "documentation"
+//    description "Pulls the addon's Hex Notebook documentation from the project and generates a page in Hex Casting's online documentation style, at doc/out.html."
+//
+//    exec {
+//        workingDir "${rootDir}"
+//        executable 'python'
+//        args "doc/collate_data.py", "common/src/main/resources", "doc/HexCastingResources", "abitmorehex", "hexdummybook", "doc/template.html", "doc/out.html"
+//    }
+//}
