@@ -3,7 +3,7 @@ package net.abitmorehex.casting.patterns.math
 import at.petrak.hexcasting.api.spell.ConstMediaAction
 import at.petrak.hexcasting.api.spell.asActionResult
 import at.petrak.hexcasting.api.spell.casting.CastingContext
-import at.petrak.hexcasting.api.spell.getDouble
+import at.petrak.hexcasting.api.spell.getList
 import at.petrak.hexcasting.api.spell.iota.Iota
 import kotlin.math.sign
 
@@ -22,7 +22,7 @@ class OpSignum : ConstMediaAction {
      * result of this action executing.
      */
     override fun execute(args: List<Iota>, ctx: CastingContext): List<Iota> {
-        val number = args.getDouble(0, argc)
-        return sign(number).asActionResult
+        val list = args.getList(0, argc)
+        return list.asActionResult
     }
 }

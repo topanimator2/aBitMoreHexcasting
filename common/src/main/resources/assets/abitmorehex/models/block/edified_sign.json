@@ -1,0 +1,35 @@
+{
+  "parent": "block/sign",
+  "textures": {
+    "0": "abitmorehex:block/edified_planks_2",
+    "1": "abitmorehex:block/edified_log",
+    "particle": "abitmorehex:block/edified_planks_2"
+  },
+  "elements": [
+    {
+      "name": "stem",
+      "from": [7.3, 0, 7.3],
+      "to": [8.7, 7, 8.7],
+      "faces": {
+        "north": {"uv": [5, 0, 7.4, 16], "texture": "#1"},
+        "east": {"uv": [8, 0, 10.4, 16], "texture": "#1"},
+        "south": {"uv": [13.6, 0, 16, 16], "texture": "#1"},
+        "west": {"uv": [11, 0, 13.4, 16], "texture": "#1"},
+        "up": {"uv": [2, 5, 3.4, 6.4], "texture": "#1"},
+        "down": {"uv": [0, 0, 1.4, 1.4], "texture": "#0"}
+      }
+    },
+    {
+      "from": [0, 7, 7.3],
+      "to": [16, 15, 8.7],
+      "faces": {
+        "north": {"uv": [0, 7, 16, 16], "texture": "#0"},
+        "east": {"uv": [4, 1, 6.4, 10], "texture": "#0"},
+        "south": {"uv": [0, 1, 16, 10], "texture": "#0"},
+        "west": {"uv": [0, 1, 2.4, 10], "texture": "#0"},
+        "up": {"uv": [0, 0, 16, 2.4], "texture": "#0"},
+        "down": {"uv": [0, 2, 16, 3.4], "texture": "#0"}
+      }
+    }
+  ]
+}

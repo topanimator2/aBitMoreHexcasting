@@ -20,10 +20,10 @@ public class abitmorehexItemRegistry {
     }
 
     // A new creative tab. Notice how it is one of the few things that are not deferred
-    public static final ItemGroup DUMMY_GROUP = CreativeTabRegistry.create(id("dummy_group"), () -> new ItemStack(abitmorehexItemRegistry.DUMMY_ITEM.get()));
+    public static final ItemGroup ABITMOREHEX_GROUP = CreativeTabRegistry.create(id("abitmorehexing_group"), () -> new ItemStack(abitmorehexItemRegistry.DUMMY_ITEM.get()));
 
     // During the loading phase, refrain from accessing suppliers' items (e.g. EXAMPLE_ITEM.get()), they will not be available
-    public static final RegistrySupplier<Item> DUMMY_ITEM = ITEMS.register("dummy_item", () -> new Item(new Item.Settings().group(DUMMY_GROUP)));
+    public static final RegistrySupplier<Item> DUMMY_ITEM = ITEMS.register("dummy_item", () -> new Item(new Item.Settings().group(ABITMOREHEX_GROUP)));
 
 
 }

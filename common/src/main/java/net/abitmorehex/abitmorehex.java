@@ -1,5 +1,6 @@
 package net.abitmorehex;
 
+import net.abitmorehex.registry.abitmorehexBlockRegistry;
 import net.abitmorehex.registry.abitmorehexIotaTypeRegistry;
 import net.abitmorehex.registry.abitmorehexItemRegistry;
 import net.abitmorehex.registry.abitmorehexPatternRegistry;
@@ -20,6 +21,7 @@ public class abitmorehex {
         LOGGER.info("aBitMore hexes is aBit and Loaded!");
 
         abitmorehexItemRegistry.init();
+        abitmorehexBlockRegistry.init();
         abitmorehexIotaTypeRegistry.init();
         abitmorehexPatternRegistry.init();
 
