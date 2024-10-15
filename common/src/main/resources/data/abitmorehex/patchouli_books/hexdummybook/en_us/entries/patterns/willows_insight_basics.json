@@ -1,0 +1,18 @@
+{
+  "name": "abitmorehex.entry.willow_insights",
+  "category": "hexcasting:patterns",
+  "icon": "minecraft:oak_leaves",
+  "sortnum": 0,
+  "advancement": "hexcasting:root",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "abitmorehex:unveiledsights",
+      "anchor": "abitmorehex:unveiledsights",
+      "input": "Vector, Vector, number",
+      "output": "List{Vector}",
+      "text": "Takes two Vector, first a position, second an direction and third a number gives you back an list of positions after the first block hit by an Raycast."
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 plugins {
     id "architectury-plugin" version "3.4.+"
 
-    id "dev.architectury.loom" version "1.2.+" apply false
+    id "dev.architectury.loom" version "1.6.+" apply false
 
     id "org.jetbrains.kotlin.jvm" version "1.8.0" apply false
 
@@ -66,6 +66,11 @@ allprojects {
             name "entity reach"
             url "https://maven.jamieswhiteshirt.com/libs-release/"
         }
+        maven {
+            name = 'Sponge / Mixin'
+            url = 'https://repo.spongepowered.org/repository/maven-public/'
+        }
+
         maven { url "https://mvn.devos.one/snapshots/" }
         maven {
             name = 'Ladysnake Mods'

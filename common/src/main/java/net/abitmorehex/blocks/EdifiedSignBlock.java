@@ -1,19 +1,20 @@
 package net.abitmorehex.blocks;
 
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
+import net.abitmorehex.blocks.tileentities.EdifiedSignBlockEntity;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.SignBlock;
-import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.state.property.Properties;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.util.SignType;
+import net.minecraft.util.math.BlockPos;
 
 public class EdifiedSignBlock extends SignBlock {
     public EdifiedSignBlock(AbstractBlock.Settings settings) {
-        super(settings, SignType.CRIMSON);
+        super(settings, SignType.OAK); // Use your custom SignType if applicable
     }
 
     @Override
-    public net.minecraft.block.BlockState getPlacementState(ItemPlacementContext ctx) {
-        return this.getDefaultState().with(Properties.ROTATION, ctx.getPlayerFacing().getOpposite().getHorizontal());
+    public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
+        return new EdifiedSignBlockEntity(pos, state);
     }
 }

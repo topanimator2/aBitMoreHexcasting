@@ -4,39 +4,47 @@ loaderVersion = "[43,)"
 license = "MIT"
 
 [[mods]]
-modId = "hexdummy"
+modId = "abitmorehex"
 version = "${version}"
-displayName = "Dummy Hex Casting Addon"
+displayName = "aBit More Hexcasting"
 logoFile = "icon.png"
-authors = "artynova"
+authors = "aBitOfSomething"
 description = '''
 Describe me!
 '''
 
-[[dependencies.hexdummy]]
+[[dependencies.abitmorehex]]
 modId = "forge"
 mandatory = true
 versionRange = "[43,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.hexdummy]]
+[[dependencies.abitmorehex]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[1.19.2,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.hexdummy]]
+[[dependencies.abitmorehex]]
 modId = "architectury"
 mandatory = true
 versionRange = "[6.5.85,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.hexdummy]]
+[[dependencies.abitmorehex]]
 modId = "hexcasting"
 mandatory = true
 versionRange = "[0.10.3,)"
 ordering = "NONE"
 side = "BOTH"
+
+[[dependencies.abitmorehex]]
+modId="hexal"
+mandatory=false
+versionRange="*"
+ordering="NONE"
+side="BOTH"
+
